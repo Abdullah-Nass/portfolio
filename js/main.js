@@ -1,8 +1,7 @@
 const roles = [
   "Frontend Developer",
-  "Localization Engineer",
-  "React Developer",
-  "RTL/BiDi Developer",
+  "React & Next.js Developer",
+  "UI Developer",
 ];
 
 const roleEl = document.getElementById("role-cycler");
