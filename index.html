@@ -55,10 +55,11 @@
             <span id="role-cycler" class="role-text">Frontend Developer</span>
           </p>
           <p class="hero-tagline">
-            Frontend Developer crafting highly precise, responsive web
-            applications. I combine modern frameworks with a detail-oriented
-            approach to build seamless, accessible, and globally scalable user
-            interfaces.
+            Frontend developer focused on React and Next.js, building
+            production-quality web applications with TypeScript, Tailwind CSS,
+            REST APIs, and PostgreSQL. Additional depth in Arabic i18n
+            engineering — RTL/BiDi layout, ICU Message Format, next-intl — for
+            end-to-end ownership of multilingual product features.
           </p>
           <div class="hero-links">
             <a
@@ -89,15 +90,16 @@
           <div class="about-grid">
             <div class="about-text">
               <p>
-                <em>Frontend Developer</em> specializing in building responsive
-                applications with React, Next.js, and TypeScript. I translate
-                complex functional requirements and design mockups into clean,
-                maintainable code. <br />
-                Drawing from deep expertise in software internationalization, I
-                bring rigorous attention to detail to the presentation layer. I
-                build products that are not only performant, but architected
-                from the ground up for global scale, RTL layouts, and
-                cross-cultural accessibility.
+                <em>Frontend Developer</em> focused on React 19 and Next.js 16,
+                building production-quality web applications with TypeScript,
+                Tailwind CSS, TanStack Query, and PostgreSQL. I translate
+                complex functional requirements into clean, maintainable code —
+                covering auth flows, optimistic UI, drag-and-drop, and testing.
+                <br />
+                With deep expertise in Arabic i18n engineering — RTL/BiDi
+                layout, ICU Message Format, next-intl/react-i18next — I bring
+                end-to-end ownership to multilingual product features, from
+                translation files to rendered UI.
               </p>
             </div>
             <div class="about-meta">
@@ -193,6 +195,52 @@
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
                 <span class="project-num">01</span>
+                <span class="project-title"
+                  >Job Tracker — Full-Stack Kanban Board</span
+                >
+                <span class="project-tags">
+                  <span class="tag">Next.js 16</span>
+                  <span class="tag">React 19</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Prisma</span>
+                  <span class="tag">PostgreSQL</span>
+                </span>
+                <span class="project-arrow">↓</span>
+              </button>
+              <div class="project-body" hidden>
+                <p>
+                  Full-stack Kanban board with auth (Neon Auth / Better Auth),
+                  Server Actions, and REST Route Handlers. IDOR-hardened — every
+                  query scoped to <code>userId</code> so a valid job ID paired
+                  with the wrong session never matches a row. Drag-and-drop
+                  across four pipeline columns (Applied → Screening → Interview
+                  → Offer) via <strong>dnd-kit</strong>; optimistic updates with
+                  <strong>TanStack Query</strong> cache rollback and toast
+                  feedback on failure. Forms with React Hook Form + Zod; dialogs
+                  with Radix UI; fully responsive 1/2/4-column layout.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://jobtracker-a.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    >Live Demo →</a
+                  >
+                  <a
+                    href="https://github.com/Abdullah-Nass/jobtracker"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    >View on GitHub →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-item">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-num">02</span>
                 <span class="project-title">Portfolio Site</span>
                 <span class="project-tags">
                   <span class="tag">HTML</span>
@@ -221,7 +269,7 @@
 
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">02</span>
+                <span class="project-num">03</span>
                 <span class="project-title"
                   >MoviesBase — Movie Discovery App</span
                 >
@@ -241,12 +289,24 @@
                   with SSR for trending pages, SSG for movie detail pages, and
                   CSR for search. Full i18n for EN/AR/ES using next-intl with
                   localized routes (<code>/[locale]/…</code>), automatic RTL/LTR
-                  switching for Arabic, locale-aware TMDB responses, and
-                  server-side pagination.
+                  switching for Arabic, and locale-aware TMDB responses. Live
+                  search dropdown with <strong>TanStack Query</strong> and a
+                  custom debounce hook — keyboard-navigable (↑↓ Enter Esc) with
+                  results cached per query key. Tested with
+                  <strong>Vitest + React Testing Library</strong>: utility
+                  functions, UI components, and async search interactions with
+                  mocked router and TanStack Query.
                 </p>
                 <div class="project-links">
                   <a
-                    href="https://github.com/Abdullah-Nass"
+                    href="https://moviesbase-a.netlify.app"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    >Live Demo →</a
+                  >
+                  <a
+                    href="https://github.com/Abdullah-Nass/moviesbase"
                     target="_blank"
                     rel="noopener"
                     class="project-link"
@@ -273,13 +333,13 @@
               </button>
               <div class="project-body" hidden>
                 <p>
-                  API-driven task management dashboard built with React 19,
-                  TypeScript, and Tailwind CSS v4. Features JWT-based
-                  authentication, protected routes, optimistic UI updates, and
-                  full i18n support for English, Arabic, and Spanish using
-                  react-i18next and Crowdin. Automatically switches document
-                  direction and layout for Arabic RTL — the full pipeline from
-                  translation files to rendered UI.
+                  Task management SPA with JWT auth, protected routes, and full
+                  i18n for EN/AR/ES using react-i18next; automatic RTL/LTR
+                  layout switching. Refactored all forms with
+                  <strong>React Hook Form + Zod</strong>; replaced manual
+                  loading/error state with
+                  <strong>TanStack Query <code>useMutation</code></strong
+                  >, cutting per-form boilerplate from 5 state variables to 1.
                 </p>
                 <div class="project-links">
                   <a
@@ -302,7 +362,7 @@
 
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">04</span>
+                <span class="project-num">05</span>
                 <span class="project-title">MyStore — E-Commerce Web App</span>
                 <span class="project-tags">
                   <span class="tag">React</span>
@@ -342,7 +402,7 @@
             </article>
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">11</span>
+                <span class="project-num">06</span>
                 <span class="project-title">Movies REST API</span>
                 <span class="project-tags">
                   <span class="tag">Node.js</span>
@@ -374,7 +434,7 @@
             </article>
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">05</span>
+                <span class="project-num">07</span>
                 <span class="project-title"
                   >Beyond Words — Graduation Research & React Prototype</span
                 >
@@ -409,7 +469,7 @@
 
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">06</span>
+                <span class="project-num">08</span>
                 <span class="project-title"
                   >TraDep — Translation Department Website</span
                 >
@@ -442,7 +502,7 @@
 
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">07</span>
+                <span class="project-num">09</span>
                 <span class="project-title">Localization QA Toolkit</span>
                 <span class="project-tags">
                   <span class="tag">Python</span>
@@ -544,10 +604,13 @@
               <h3 class="skill-group-title">Frontend</h3>
               <ul class="skill-list">
                 <li>HTML5 · CSS3 · JavaScript (ES6+)</li>
-                <li>TypeScript · React · React Router v7</li>
-                <li>Next.js (App Router · SSR · SSG · CSR)</li>
-                <li>Tailwind CSS · Bootstrap · Vite · npm · Axios</li>
-                <li>React Context API · Redux (concepts)</li>
+                <li>TypeScript (strict) · React 19 · React Router v7</li>
+                <li>
+                  Next.js 16 (App Router · SSR · SSG · Server Actions · CSR)
+                </li>
+                <li>Tailwind CSS v4 · Bootstrap · Vite · npm · Axios</li>
+                <li>TanStack Query 5 · React Hook Form · Zod</li>
+                <li>dnd-kit · Radix UI · Vitest · React Testing Library</li>
                 <li>JWT authentication · Protected routes · Optimistic UI</li>
                 <li>
                   react-intl · react-i18next · next-intl · ICU Message Format
@@ -560,7 +623,8 @@
               <ul class="skill-list">
                 <li>Python · Node.js · Express</li>
                 <li>Flask · Flask-Babel</li>
-                <li>REST API integration · Postman</li>
+                <li>Prisma 7 · PostgreSQL (Neon) · Neon Auth (Better Auth)</li>
+                <li>REST API integration · REST Route Handlers · Postman</li>
                 <li>SQL</li>
                 <li>GitHub Actions · Netlify</li>
                 <li>Regular Expressions</li>
@@ -644,10 +708,12 @@
               Open to Frontend Developer and UI Engineering roles.
             </p>
             <p class="contact-body">
-              Especially interested in collaborative teams that value clean
-              code, accessible interfaces, and seamless API integration. Whether
-              you are building a modern web application or scaling a product for
-              a global audience, I'd love to connect.
+              Especially interested in teams building production-quality React
+              and Next.js applications — particularly where multilingual
+              support, RTL layouts, or i18n engineering are part of the product.
+              Whether you are scaling a web application for a global audience or
+              need someone who can own a feature end-to-end, I'd love to
+              connect.
             </p>
             <div class="contact-links">
               <a href="mailto:abdula.naser04@gmail.com" class="contact-cta"
