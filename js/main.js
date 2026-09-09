@@ -2,6 +2,7 @@ const roles = [
   "Frontend Developer",
   "React & Next.js Developer",
   "UI Developer",
+  "Full-Stack Developer",
 ];
 
 const roleEl = document.getElementById("role-cycler");
@@ -10,7 +11,7 @@ if (roleEl) {
   let current = 0;
 
   const cycle = () => {
-    current = (current + 1) % 4;
+    current = (current + 1) % roles.length;
 
     roleEl.style.opacity = "0";
     roleEl.style.transform = "translateY(6px)";
