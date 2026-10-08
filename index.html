@@ -136,10 +136,79 @@
           <h2 class="section-label">Projects</h2>
           <p class="section-intro">Click any project to expand.</p>
           <div class="project-list">
-            <!-- 01 Job Tracker -->
+            <!-- 01 Waiter -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
                 <span class="project-num">01</span>
+                <span class="project-title"
+                  >Waiter — Real-Time Restaurant Ordering System</span
+                >
+                <span class="project-tags">
+                  <span class="tag">Next.js 15</span>
+                  <span class="tag">Socket.io</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Prisma</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">i18n</span>
+                  <span class="tag">RTL</span>
+                </span>
+                <span class="project-arrow">↓</span>
+              </button>
+              <div class="project-body" hidden>
+                <div class="project-preview">
+                  <img
+                    src="images/previews/waiter.png"
+                    alt="Waiter preview"
+                    class="project-preview-img"
+                  />
+                </div>
+                <p>
+                  Real-time, bilingual restaurant ordering system with three
+                  roles — Waiter, Kitchen, and Admin — each protected at the
+                  layout level. Waiters browse the menu and submit orders; a
+                  custom <strong>Node.js + Socket.io</strong> server pushes them
+                  to the kitchen board instantly with no polling. Kitchen staff
+                  move orders through <code>SENT → IN_PROGRESS → READY</code>;
+                  status changes fire a live toast notification to the waiter
+                  anywhere in the app. Cart state managed with
+                  <strong>Zustand</strong>; <code>Order</code> +
+                  <code>OrderItem</code> records created atomically via a single
+                  Server Action. Full <strong>Arabic/English</strong> i18n with
+                  next-intl, automatic RTL/LTR switching, and bilingual data
+                  stored at the DB level (<code>nameAr</code>/<code>nameEn</code>).
+                  30+ <strong>Vitest + React Testing Library</strong> tests
+                  covering Zustand store logic and role-aware UI components.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://waiter-jm3w.onrender.com/en/login"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    >Live Demo →</a
+                  >
+                  <a
+                    href="https://github.com/Abdullah-Nass/waiter"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    >GitHub →</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=Y7nLLQ_kL0s"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    >Video Demo →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 02 Job Tracker -->
+            <article class="project-item">
+              <button class="project-toggle" aria-expanded="false">
+                <span class="project-num">02</span>
                 <span class="project-title"
                   >Job Tracker — Full-Stack Kanban Board</span
                 >
@@ -190,10 +259,10 @@
               </div>
             </article>
 
-            <!-- 02 Zync -->
+            <!-- 03 Zync -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">02</span>
+                <span class="project-num">03</span>
                 <span class="project-title"
                   >Zync — Full-Stack Social Platform</span
                 >
@@ -249,10 +318,10 @@
               </div>
             </article>
 
-            <!-- 03 MoviesBase -->
+            <!-- 04 MoviesBase -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">03</span>
+                <span class="project-num">04</span>
                 <span class="project-title"
                   >MoviesBase — Movie Discovery App</span
                 >
@@ -306,10 +375,10 @@
               </div>
             </article>
 
-            <!-- 04 Multilingual Dashboard -->
+            <!-- 05 Multilingual Dashboard -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">04</span>
+                <span class="project-num">05</span>
                 <span class="project-title"
                   >Multilingual Dashboard — React i18n App</span
                 >
@@ -358,10 +427,10 @@
               </div>
             </article>
 
-            <!-- 05 MyStore -->
+            <!-- 06 MyStore -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">05</span>
+                <span class="project-num">06</span>
                 <span class="project-title">MyStore — E-Commerce Web App</span>
                 <span class="project-tags">
                   <span class="tag">React</span>
@@ -407,10 +476,10 @@
               </div>
             </article>
 
-            <!-- 06 Movies REST API -->
+            <!-- 07 Movies REST API -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">06</span>
+                <span class="project-num">07</span>
                 <span class="project-title">Movies REST API</span>
                 <span class="project-tags">
                   <span class="tag">Node.js</span>
@@ -440,10 +509,10 @@
               </div>
             </article>
 
-            <!-- 07 Beyond Words -->
+            <!-- 08 Beyond Words -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">07</span>
+                <span class="project-num">08</span>
                 <span class="project-title"
                   >Beyond Words — Graduation Research & React Prototype</span
                 >
@@ -483,10 +552,10 @@
               </div>
             </article>
 
-            <!-- 08 Portfolio -->
+            <!-- 09 Portfolio -->
             <article class="project-item">
               <button class="project-toggle" aria-expanded="false">
-                <span class="project-num">08</span>
+                <span class="project-num">09</span>
                 <span class="project-title">Portfolio Site</span>
                 <span class="project-tags">
                   <span class="tag">HTML</span>
