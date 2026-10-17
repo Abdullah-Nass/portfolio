@@ -1,0 +1,116 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.project-list {
+  @include flex;
+  article {
+    border-top: 1px solid $navy-border;
+    &:last-child {
+      border-bottom: 1px solid $navy-border;
+    }
+    button {
+      @include grid(
+        $templateColumns: 2.5rem 1fr auto auto,
+        $align: center,
+        $gap: 1rem
+      );
+      @include respond-to("sm") {
+        @include grid(
+          $templateColumns: 2rem 1fr auto,
+          $align: center,
+          $gap: 1rem
+        );
+      }
+      width: 100%;
+      padding: 1.25rem 0;
+      text-align: left;
+      transition: opacity 0.15s;
+
+      &:hover {
+        opacity: 0.75;
+      }
+      &[aria-expanded="true"] .project-arrow {
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+      .project-num {
+        font-family: $font-mono;
+        font-size: 11px;
+        color: $subtle;
+      }
+      .project-title {
+        font-size: 15px;
+        font-weight: 500;
+        color: $off-white;
+      }
+      .project-tags {
+        @include flex($direction: row, $wrap: wrap, $gap: 0.4rem);
+        @include respond-to("sm") {
+          display: none;
+        }
+        span {
+          font-family: $font-mono;
+          font-size: 10px;
+          padding: 0.2rem 0.5rem;
+          border-radius: 3px;
+          background: $navy-soft;
+          border: 1px solid $navy-border;
+          color: $teal;
+          letter-spacing: 0.04em;
+        }
+      }
+      .project-arrow {
+        font-size: 14px;
+        color: $muted;
+        transition: transform 0.2s ease-out;
+      }
+    }
+    .project-body {
+      padding: 0 0 1.5rem 3.5rem;
+      @include respond-to("sm") {
+        padding-left: 2rem;
+      }
+      p {
+        font-size: 14px;
+        color: $muted;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        max-width: 560px;
+      }
+      .project-links {
+        @include flex($direction: row, $gap: 1rem);
+        a {
+          font-family: $font-mono;
+          font-size: 12px;
+          color: $teal;
+          transition: color 0.15s;
+          &:hover {
+            color: $off-white;
+          }
+        }
+      }
+      .project-preview {
+        margin-bottom: 1.25rem;
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid $navy-border;
+        background: $navy-soft;
+        max-width: 560px;
+        aspect-ratio: 16 / 9;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          display: block;
+          transition: opacity 0.2s;
+          &[src=""],
+          &:not([src]) {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -24,13 +24,13 @@
           <a href="#about" class="nav-link" data-section="about">About</a>
         </li>
         <li>
-          <a href="#experience" class="nav-link" data-section="experience"
-            >Experience</a
+          <a href="#projects" class="nav-link" data-section="projects"
+            >Projects</a
           >
         </li>
         <li>
-          <a href="#projects" class="nav-link" data-section="projects"
-            >Projects</a
+          <a href="#experience" class="nav-link" data-section="experience"
+            >Experience</a
           >
         </li>
         <li>
@@ -83,7 +83,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="section">
+      <section id="about">
         <div class="section-inner">
           <h2 class="section-label">About</h2>
           <div class="about-grid">
@@ -103,64 +103,56 @@
               </p>
             </div>
             <div class="about-meta">
-              <div class="meta-item">
-                <span class="meta-label">Location</span>
-                <span class="meta-value">Amman, Jordan</span>
+              <div>
+                <span>Location</span>
+                <span>Amman, Jordan</span>
               </div>
-              <div class="meta-item">
-                <span class="meta-label">Languages</span>
-                <span class="meta-value"
-                  >Arabic — Native<br />English — Fluent</span
-                >
+              <div>
+                <span>Languages</span>
+                <span>Arabic — Native<br />English — Fluent</span>
               </div>
-              <div class="meta-item">
-                <span class="meta-label">Education</span>
-                <span class="meta-value"
+              <div>
+                <span>Education</span>
+                <span
                   >BA Translation & Interpretation<br />Yarmouk University · GPA
                   90%</span
                 >
               </div>
-              <div class="meta-item">
-                <span class="meta-label">Contact</span>
-                <span class="meta-value"
-                  >abdula.naser04@gmail.com<br />+962 7 88717891</span
-                >
+              <div>
+                <span>Contact</span>
+                <span>abdula.naser04@gmail.com<br />+962 7 88717891</span>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- PROJECTS -->
-      <section id="projects" class="section">
+      <section id="projects">
         <div class="section-inner">
           <h2 class="section-label">Projects</h2>
           <p class="section-intro">Click any project to expand.</p>
           <div class="project-list">
             <!-- 01 Waiter -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">01</span>
                 <span class="project-title"
                   >Waiter — Real-Time Restaurant Ordering System</span
                 >
                 <span class="project-tags">
-                  <span class="tag">Next.js 15</span>
-                  <span class="tag">Socket.io</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Prisma</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">i18n</span>
-                  <span class="tag">RTL</span>
+                  <span>Next.js 15</span>
+                  <span>Socket.io</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>PostgreSQL</span>
+                  <span>i18n</span>
+                  <span>RTL</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
               <div class="project-body" hidden>
                 <div class="project-preview">
-                  <img
-                    src="images/previews/waiter.png"
-                    alt="Waiter preview"
-                    class="project-preview-img"
-                  />
+                  <img src="images/previews/waiter.png" alt="Waiter preview" />
                 </div>
                 <p>
                   Real-time, bilingual restaurant ordering system with three
@@ -175,30 +167,28 @@
                   <code>OrderItem</code> records created atomically via a single
                   Server Action. Full <strong>Arabic/English</strong> i18n with
                   next-intl, automatic RTL/LTR switching, and bilingual data
-                  stored at the DB level (<code>nameAr</code>/<code>nameEn</code>).
-                  30+ <strong>Vitest + React Testing Library</strong> tests
-                  covering Zustand store logic and role-aware UI components.
+                  stored at the DB level
+                  (<code>nameAr</code>/<code>nameEn</code>). 30+
+                  <strong>Vitest + React Testing Library</strong> tests covering
+                  Zustand store logic and role-aware UI components.
                 </p>
                 <div class="project-links">
                   <a
                     href="https://waiter-jm3w.onrender.com/en/login"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Live Demo →</a
                   >
                   <a
                     href="https://github.com/Abdullah-Nass/waiter"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                   <a
                     href="https://www.youtube.com/watch?v=Y7nLLQ_kL0s"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Video Demo →</a
                   >
                 </div>
@@ -206,18 +196,18 @@
             </article>
 
             <!-- 02 Job Tracker -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">02</span>
                 <span class="project-title"
                   >Job Tracker — Full-Stack Kanban Board</span
                 >
                 <span class="project-tags">
-                  <span class="tag">Next.js 16</span>
-                  <span class="tag">React 19</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Prisma</span>
-                  <span class="tag">PostgreSQL</span>
+                  <span>Next.js 16</span>
+                  <span>React 19</span>
+                  <span>TypeScript</span>
+                  <span>Prisma</span>
+                  <span>PostgreSQL</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -226,7 +216,6 @@
                   <img
                     src="images/previews/jobtracker.png"
                     alt="Job Tracker preview"
-                    class="project-preview-img"
                   />
                 </div>
                 <p>
@@ -245,14 +234,12 @@
                     href="https://jobtracker-a.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Live Demo →</a
                   >
                   <a
                     href="https://github.com/Abdullah-Nass/jobtracker"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -260,28 +247,24 @@
             </article>
 
             <!-- 03 Zync -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">03</span>
                 <span class="project-title"
                   >Zync — Full-Stack Social Platform</span
                 >
                 <span class="project-tags">
-                  <span class="tag">React 19</span>
-                  <span class="tag">TanStack Router</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">JWT</span>
+                  <span>React 19</span>
+                  <span>TanStack Router</span>
+                  <span>Node.js</span>
+                  <span>PostgreSQL</span>
+                  <span>JWT</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
               <div class="project-body" hidden>
                 <div class="project-preview">
-                  <img
-                    src="images/previews/zync.png"
-                    alt="Zync preview"
-                    class="project-preview-img"
-                  />
+                  <img src="images/previews/zync.png" alt="Zync preview" />
                 </div>
                 <p>
                   Full-stack social media platform — follow people, post
@@ -304,14 +287,12 @@
                     href="https://zync-app.netlify.app"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Live Demo →</a
                   >
                   <a
                     href="https://github.com/Abdullah-Nass/zync"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -319,18 +300,18 @@
             </article>
 
             <!-- 04 MoviesBase -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">04</span>
                 <span class="project-title"
                   >MoviesBase — Movie Discovery App</span
                 >
                 <span class="project-tags">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">i18n</span>
-                  <span class="tag">RTL</span>
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                  <span>i18n</span>
+                  <span>RTL</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -339,7 +320,6 @@
                   <img
                     src="images/previews/moviesbase.png"
                     alt="MoviesBase preview"
-                    class="project-preview-img"
                   />
                 </div>
                 <p>
@@ -361,14 +341,12 @@
                     href="https://moviesbase-a.netlify.app"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Live Demo →</a
                   >
                   <a
                     href="https://github.com/Abdullah-Nass/moviesbase"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -376,18 +354,18 @@
             </article>
 
             <!-- 05 Multilingual Dashboard -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">05</span>
                 <span class="project-title"
                   >Multilingual Dashboard — React i18n App</span
                 >
                 <span class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">i18n</span>
-                  <span class="tag">RTL</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                  <span>i18n</span>
+                  <span>RTL</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -396,7 +374,6 @@
                   <img
                     src="images/previews/dashboard.png"
                     alt="Dashboard preview"
-                    class="project-preview-img"
                   />
                 </div>
                 <p>
@@ -413,14 +390,12 @@
                     href="https://dashboard-a-n.netlify.app"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Live Demo →</a
                   >
                   <a
                     href="https://github.com/Abdullah-Nass/dashboard"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -428,15 +403,15 @@
             </article>
 
             <!-- 06 MyStore -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">06</span>
                 <span class="project-title">MyStore — E-Commerce Web App</span>
                 <span class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">REST API</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                  <span>REST API</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -445,7 +420,6 @@
                   <img
                     src="images/previews/mystore.png"
                     alt="MyStore preview"
-                    class="project-preview-img"
                   />
                 </div>
                 <p>
@@ -462,14 +436,12 @@
                     href="https://mystore-a.netlify.app"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >Live Demo →</a
                   >
                   <a
                     href="https://github.com/Abdullah-Nass/mystore"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -477,14 +449,14 @@
             </article>
 
             <!-- 07 Movies REST API -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">07</span>
                 <span class="project-title">Movies REST API</span>
                 <span class="project-tags">
-                  <span class="tag">Node.js</span>
-                  <span class="tag">Express</span>
-                  <span class="tag">REST API</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>REST API</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -502,7 +474,6 @@
                     href="https://github.com/Abdullah-Nass/movies-api"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -510,17 +481,17 @@
             </article>
 
             <!-- 08 Beyond Words -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">08</span>
                 <span class="project-title"
                   >Beyond Words — Graduation Research & React Prototype</span
                 >
                 <span class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">react-intl</span>
-                  <span class="tag">ICU</span>
-                  <span class="tag">TypeScript</span>
+                  <span>React</span>
+                  <span>react-intl</span>
+                  <span>ICU</span>
+                  <span>TypeScript</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -529,7 +500,6 @@
                   <img
                     src="images/previews/beyondwords.png"
                     alt="Beyond Words preview"
-                    class="project-preview-img"
                   />
                 </div>
                 <p>
@@ -545,7 +515,6 @@
                     href="https://github.com/Abdullah-Nass/graduation-project"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >GitHub →</a
                   >
                 </div>
@@ -553,14 +522,14 @@
             </article>
 
             <!-- 09 Portfolio -->
-            <article class="project-item">
-              <button class="project-toggle" aria-expanded="false">
+            <article>
+              <button aria-expanded="false">
                 <span class="project-num">09</span>
                 <span class="project-title">Portfolio Site</span>
                 <span class="project-tags">
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
                 </span>
                 <span class="project-arrow">↓</span>
               </button>
@@ -575,7 +544,6 @@
                     href="https://github.com/Abdullah-Nass/portfolio"
                     target="_blank"
                     rel="noopener"
-                    class="project-link"
                     >View source on GitHub →</a
                   >
                 </div>
@@ -586,21 +554,19 @@
       </section>
 
       <!-- EXPERIENCE -->
-      <section id="experience" class="section">
+      <section id="experience">
         <div class="section-inner">
           <h2 class="section-label">Experience</h2>
           <div class="experience-list">
-            <article class="experience-item">
-              <div class="experience-header">
+            <article>
+              <div>
                 <div>
-                  <h3 class="experience-title">
-                    Document Specialist & Administrative Assistant
-                  </h3>
-                  <p class="experience-org">Alhader Library</p>
+                  <h3>Document Specialist & Administrative Assistant</h3>
+                  <p>Alhader Library</p>
                 </div>
-                <span class="experience-date">Aug 2023 – Jun 2026</span>
+                <span>Aug 2023 – Jun 2026</span>
               </div>
-              <ul class="experience-bullets">
+              <ul>
                 <li>
                   Processed documents and maintained accurate records in a
                   service-oriented environment; supported daily operational
@@ -613,12 +579,12 @@
       </section>
 
       <!-- SKILLS -->
-      <section id="skills" class="section">
+      <section id="skills">
         <div class="section-inner">
           <h2 class="section-label">Skills</h2>
           <div class="skills-grid">
-            <div class="skill-group">
-              <h3 class="skill-group-title">Frontend</h3>
+            <div>
+              <h3>Frontend</h3>
               <ul class="skill-list">
                 <li>HTML5 · CSS3 · JavaScript (ES6+)</li>
                 <li>TypeScript (strict) · React 19 · React Router v7</li>
@@ -630,8 +596,8 @@
                 <li>JWT auth · Protected routes · Optimistic UI</li>
               </ul>
             </div>
-            <div class="skill-group">
-              <h3 class="skill-group-title">i18n & RTL</h3>
+            <div>
+              <h3>i18n & RTL</h3>
               <ul class="skill-list">
                 <li>react-intl · react-i18next · next-intl</li>
                 <li>ICU Message Format</li>
@@ -640,8 +606,8 @@
                 <li>XLIFF · PO/POT · JSON translation files</li>
               </ul>
             </div>
-            <div class="skill-group">
-              <h3 class="skill-group-title">Backend & Tools</h3>
+            <div>
+              <h3>Backend & Tools</h3>
               <ul class="skill-list">
                 <li>Node.js · Express · Python · Flask</li>
                 <li>Prisma 7 · PostgreSQL (Neon) · Raw SQL</li>
@@ -653,31 +619,29 @@
           </div>
 
           <div class="courses-block">
-            <h3 class="skill-group-title" style="margin-bottom: 1rem">
-              Courses & Certifications
-            </h3>
-            <div class="courses-list">
-              <div class="course-item">
+            <h3 style="margin-bottom: 1rem">Courses & Certifications</h3>
+            <ul class="courses-list">
+              <li class="course-item">
                 <span class="course-name">100 Days of Code: Python</span>
                 <span class="course-org"
                   >REST APIs · Flask · automation · file processing</span
                 >
-              </div>
-              <div class="course-item">
+              </li>
+              <li class="course-item">
                 <span class="course-name"
                   >Introduction to Localization Tools</span
                 >
                 <span class="course-org"
                   >SDL Trados · memoQ · Crowdin · Lokalise · Phrase</span
                 >
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section section--last">
+      <section id="contact">
         <div class="section-inner">
           <h2 class="section-label">Contact</h2>
           <div class="contact-block">

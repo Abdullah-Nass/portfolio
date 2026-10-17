@@ -1,0 +1,50 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.skills-grid {
+  @include grid($templateColumns: repeat(3, 1fr), $gap: 2rem 3rem);
+  @include respond-to("sm") {
+    @include grid($templateColumns: 1fr, $gap: 2rem 3rem);
+  }
+  @include respond-to("md") {
+    @include grid($templateColumns: repeat(2, 1fr), $gap: 2rem 3rem);
+  }
+  margin-bottom: 3rem;
+  h3 {
+    font-family: $font-mono;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $teal-dim;
+    margin-bottom: 0.75rem;
+  }
+  ul {
+    @include flex($gap: 0.35rem);
+    li {
+      font-size: 13px;
+      color: $muted;
+      line-height: 1.5;
+    }
+  }
+}
+
+.courses-block {
+  border-top: 1px solid $navy-border;
+  padding-top: 2rem;
+  ul {
+    @include flex($gap: 1rem);
+    li {
+      @include flex($gap: 0.2rem);
+      .course-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: $off-white;
+      }
+      .course-org {
+        font-size: 12px;
+        color: $muted;
+        font-family: $font-mono;
+      }
+    }
+  }
+}

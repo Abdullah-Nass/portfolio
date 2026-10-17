@@ -1,0 +1,46 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.about-grid {
+  @include grid($templateColumns: 1fr 280px, $gap: 4rem, $align: start);
+  @include respond-to("md") {
+    @include grid($templateColumns: 1fr, $gap: 2.5rem);
+  }
+  .about-text {
+    p {
+      color: $off-white;
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+      line-height: 1.8;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    em {
+      color: $gold;
+      font-style: normal;
+    }
+  }
+  .about-meta {
+    @include flex($gap: 1.5rem);
+    padding-top: 0.25rem;
+    @include respond-to("md") {
+      @include flex($direction: row, $gap: 1.5rem 2.5rem, $wrap: wrap);
+    }
+    div {
+      @include flex($gap: 0.2rem);
+      span:first-child {
+        font-family: $font-mono;
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: $teal-dim;
+      }
+      span:last-child {
+        font-size: 13px;
+        color: $off-white;
+        line-height: 1.5;
+      }
+    }
+  }
+}

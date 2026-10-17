@@ -1,0 +1,55 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.experience-list {
+  @include flex($gap: 2.5rem);
+  article {
+    padding-left: 1.25rem;
+    border-left: 1px solid $navy-border;
+    div:first-child {
+      @include flex($gap: 1rem, $justify: space-between, $align: flex-start);
+      margin-bottom: 0.75rem;
+      @include respond-to("sm") {
+        @include flex(
+          $gap: 0.25rem,
+          $justify: space-between,
+          $align: flex-start
+        );
+      }
+      div {
+        h3 {
+          font-family: $font-body;
+          font-size: 1rem;
+          font-weight: 500;
+          color: $off-white;
+          margin-bottom: 0.2rem;
+        }
+        p {
+          font-size: 13px;
+          color: $muted;
+        }
+      }
+      span {
+        font-family: $font-mono;
+        font-size: 12px;
+        color: $muted;
+        white-space: nowrap;
+        padding-top: 0.2rem;
+      }
+    }
+    ul {
+      @include flex($gap: 0.5rem);
+      padding-left: 1rem;
+      list-style: disc;
+      li {
+        font-size: 14px;
+        color: $muted;
+        line-height: 1.7;
+        padding-left: 0.25rem;
+        &::marker {
+          color: $subtle;
+        }
+      }
+    }
+  }
+}

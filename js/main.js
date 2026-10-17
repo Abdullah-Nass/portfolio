@@ -46,7 +46,7 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
-const toggles = document.querySelectorAll(".project-toggle");
+const toggles = document.querySelectorAll(".project-list article button");
 
 toggles.forEach((toggle) => {
   toggle.addEventListener("click", () => {

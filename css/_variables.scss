@@ -1,0 +1,28 @@
+@use "mixins" as *;
+
+$navy: #0d1117;
+$navy-soft: #161b22;
+$navy-border: #21262d;
+$gold: #c9a84c;
+$gold-dim: #8a6f2e;
+$teal: #4caeac;
+$teal-dim: #2d7a78;
+$off-white: #e8e4dc;
+$muted: #8b8680;
+$subtle: #30363d;
+
+$font-display: "DM Serif Display", Georgia, serif;
+$font-body: "Inter", system-ui, sans-serif;
+$font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+$nav-width: 200px;
+$content-max: 780px;
+$section-gap: 7rem;
+
+$active-link: #c9a84c14;
+
+@include respond-to("sm") {
+  :root {
+    $nav-width: 0;
+  }
+}

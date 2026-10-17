@@ -1,0 +1,44 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.contact-block {
+  max-width: 560px;
+  .contact-headline {
+    font-family: $font-display;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 400;
+    line-height: 1.25;
+    color: $off-white;
+    margin-bottom: 1rem;
+  }
+  .contact-body {
+    font-size: 15px;
+    color: $muted;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+  }
+  .contact-links {
+    @include flex($direction: row, $wrap: wrap, $align: center, $gap: 1.25rem);
+    .contact-cta {
+      font-family: $font-mono;
+      font-size: 13px;
+      color: $gold;
+      border-bottom: 1px solid $gold-dim;
+      padding-bottom: 1px;
+      transition: all 0.2s;
+      &:hover {
+        color: $off-white;
+        border-color: $off-white;
+      }
+    }
+    .contact-secondary {
+      font-family: $font-mono;
+      font-size: 13px;
+      color: $muted;
+      transition: color 0.2s;
+      &:hover {
+        color: $off-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.side-nav {
+  @include flex($gap: 2.5rem);
+  @include respond-to("sm") {
+    display: none;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-width;
+  height: 100vh;
+  padding: 2.5rem 2rem;
+  border-right: 1px solid $navy-border;
+  z-index: 100;
+  ul {
+    @include flex($gap: 0.25rem);
+  }
+  .nav-link {
+    font-size: 13px;
+    font-weight: 400;
+    color: $muted;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    transition:
+      color 0.2s,
+      background 0.2s;
+    display: block;
+    &:hover {
+      color: $off-white;
+    }
+    &.active {
+      color: $gold;
+      background: $active-link;
+    }
+  }
+}
